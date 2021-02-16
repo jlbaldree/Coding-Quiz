@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>JavaScript Coding Quiz</title>
+
+   <!-- Link a link to Bootstrap-->
+  <link rel="stylesheet" href="./Assets/style.css">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <!--Highscore Display-->
+  <section id="highscores-link"><span>Highscores</span>
+  	<div id="highScores">
+  		<ul id="highScoresList"></ul>
+  	</div></section>
+  <section id="countdown-display"><span>Time Allowed: 30 seconds</span></section>
+  <div class="jumbotron text-center">
+    <h1><strong>JavaScript Coding Quiz</strong></h1>
+    <hr>
+  
+    <div id="start-button">
+      <button class="btn btn-outline-dark btn-lg normal-button" OnClick="this.disabled = true">
+        <span class="fa fa-ok"></span>Begin</button>
+    </div>
+    <br> 
+    <div id="msg"><span>Correct answers are 2 points, wrong answers cost 1 point. If all questions are answered correctly the remaining seconds are awarded as additional points.</span></div>
+    <br>
+    <!-- Initials Input Field, hidden until quiz is completed-->
+<div class="wrapper">
+<form id="initialsForm">
+<div class="form-initials">
+    <label id="nameLable" for="nameField">Enter Your Initials:</label>
+    <br>
+    <input id="initials" type="text" class="center-text" maxlength="5"></input>
+</div>
+<br>
+<div class="form-sub"><button id="subButton" type="button" class="btn btn-outline-dark btn-lg normal-button">Done</button>
+</div>
+</form>
+<br>
+<div>
+    <p id="result"></p></div>
+</div>
+  </div>
+
+  <div class="container" id="container">
+      
+      <!-- Option Buttons - Quiz Questions & Answers -->
+      <table class="table table-hover">
+        <thead></thead>
+          <tr>
+            <th class="bg-secondary text-white"><h5>Question<span id="question"></span></h5></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><Input type="radio" name="answer" id="a1" value="" style="margin-right: 15px"><label for="a1"></label></td>
+          </tr>
+          <tr>
+            <td><Input type="radio" name="answer" id="a2" value="" style="margin-right: 15px"><label for="a2"></label></td>
+          </tr>
+          <tr>
+            <td><Input type="radio" name="answer" id="a3" value="" style="margin-right: 15px"><label for="a3"></label></td>
+          </tr>
+          <tr>
+            <td><Input type="radio" name="answer" id="a4" value="" style="margin-right: 15px"><label for="a4"></label></td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 class="text-left" id="answer-outcome"><span>Make a Selection</span></span></h5>
+      <button id = "submit" class="btn btn-outline-dark btn-lg normal-button" OnClick="this.disabled = true"><span class="fa fa-ok"></span>Submit</button>
+      <button id = "next" class="btn btn-outline-dark btn-lg normal-button"><span class="fa fa-ok"></span>Next</button>
+ </div>
+
+  
+<script src="./Assets/script.js"></script>
+</body>
+</html>
