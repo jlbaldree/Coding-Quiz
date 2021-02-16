@@ -12,4 +12,7 @@ The allotted time given for the quiz is 30 seconds and is displayed in the top r
 ## Link to deployed application
 https://jlbaldree.github.io/Coding-Quiz/
 
+
+![screenshot](https://user-images.githubusercontent.com/74524186/108019496-98f86700-6fd7-11eb-8ddd-e94821e3bfc7.PNG)
+nshot.PNG
  
